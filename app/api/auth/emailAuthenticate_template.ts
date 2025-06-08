@@ -10,7 +10,7 @@ import { loginUsingOAuth } from "../utils/generateOktoAuthToken";
 
 dotenv.config();
 
-const client_swa = process.env.OKTO_CLIENT_SWA as Hex;
+const client_swa = process.env.NEXT_PUBLIC_OKTO_CLIENT_SWA as Hex;
 
 async function postSignedRequest(endpoint: string, fullPayload: any) {
   const payloadWithTimestamp = {

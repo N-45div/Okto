@@ -3,7 +3,7 @@ import { config } from "dotenv";
 
 config();
 
-const client_private_key = process.env.OKTO_CLIENT_PRIVATE_KEY as string;
+const client_private_key = process.env.NEXT_PUBLIC_OKTO_CLIENT_PRIVATE_KEY as string;
 
 // Replace with your actual private key (Client Private Key)
 // Remove '0x' prefix if it exists

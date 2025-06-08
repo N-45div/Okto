@@ -9,7 +9,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: "Missing email" }, { status: 400 });
         }
         // Call the real Okto sendOtp logic (using postSignedRequest) with the provided email.
-        const payload = { email, client_swa: process.env.OKTO_CLIENT_SWA };
+        const payload = { email, client_swa: process.env.NEXT_PUBLIC_OKTO_CLIENT_SWA };
         console.log("Request Body:", {
             data: { ...payload, timestamp: Date.now() - 1000 },
             type: "ethsign"

@@ -27,7 +27,7 @@ import type { Address } from "../helper/types.js";
 import { getOrderHistory } from "../utils/getOrderHistory.js";
 
 dotenv.config();
-const clientSWA = process.env.OKTO_CLIENT_SWA as Hex;
+const clientSWA = process.env.NEXT_PUBLIC_OKTO_CLIENT_SWA as Hex;
 const OKTO_AUTH_TOKEN = process.env.OKTO_AUTH_TOKEN || "";
 
 interface Data {

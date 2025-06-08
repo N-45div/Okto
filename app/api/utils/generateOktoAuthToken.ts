@@ -18,8 +18,8 @@ import { invokeAuthenticate } from "./invokeAuthenticate";
 
 dotenv.config();
 
-const clientPrivateKey = process.env.OKTO_CLIENT_PRIVATE_KEY as Hash;
-const clientSWA = process.env.OKTO_CLIENT_SWA as Hex;
+const clientPrivateKey = process.env.NEXT_PUBLIC_OKTO_CLIENT_PRIVATE_KEY as Hash;
+const clientSWA = process.env.NEXT_PUBLIC_OKTO_CLIENT_SWA as Hex;
 
 /*
  * This function explains the construction of the okto auth UserOp payload

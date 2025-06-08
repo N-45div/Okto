@@ -11,7 +11,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: "Missing email, token, or OTP" }, { status: 400 });
         }
         // Call the Okto verifyOtp logic
-        const payload = { email, token, otp, client_swa: process.env.OKTO_CLIENT_SWA };
+        const payload = { email, token, otp, client_swa: process.env.NEXT_PUBLIC_OKTO_CLIENT_SWA };
         const res = await postSignedRequest("https://sandbox-api.okto.tech/api/oc/v1/authenticate/email/verify", payload);
         console.log("Okto verify response:", res);
 
