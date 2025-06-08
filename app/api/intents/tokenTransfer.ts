@@ -19,7 +19,7 @@ import {
   executeUserOp,
   type SessionConfig,
   getUserOperationGasPrice,
-} from "../utils/invokeExecuteUserOp.js";
+} from "../utils/invokeExecuteUserOp";
 import { getChains } from "../explorer/getChains";
 
 import dotenv from "dotenv";
