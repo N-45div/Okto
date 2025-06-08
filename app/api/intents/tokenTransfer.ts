@@ -10,21 +10,21 @@ import {
   type Hex,
 } from "viem";
 import { v4 as uuidv4 } from "uuid";
-import { INTENT_ABI } from "../helper/abi.js";
+import { INTENT_ABI } from "../helper/abi";
 import { Constants } from "../helper/constants";
-import { paymasterData } from "../utils/generatePaymasterData.js";
-import { nonceToBigInt } from "../helper/nonceToBigInt.js";
+import { paymasterData } from "../utils/generatePaymasterData";
+import { nonceToBigInt } from "../helper/nonceToBigInt";
 import {
   signUserOp,
   executeUserOp,
   type SessionConfig,
   getUserOperationGasPrice,
 } from "../utils/invokeExecuteUserOp.js";
-import { getChains } from "../explorer/getChains.js";
+import { getChains } from "../explorer/getChains";
 
 import dotenv from "dotenv";
-import type { Address } from "../helper/types.js";
-import { getOrderHistory } from "../utils/getOrderHistory.js";
+import type { Address } from "../helper/types";
+import { getOrderHistory } from "../utils/getOrderHistory";
 
 dotenv.config();
 const clientSWA = process.env.NEXT_PUBLIC_OKTO_CLIENT_SWA as Hex;
